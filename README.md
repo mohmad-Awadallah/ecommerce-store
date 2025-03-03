@@ -75,6 +75,10 @@ This project is a modern e-commerce web application built with React that provid
    npm run cypress:open
    ```
 
+
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in your browser.   
+
 ### 7. Credentials
 - Username: `mor_2314`
 - Password: `83r5^_`
