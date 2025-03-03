@@ -85,23 +85,25 @@ This project is a modern e-commerce web application built with React that provid
 Below are some screenshots showcasing the application's interface:
 
 #### Home Page
-![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2019-52-30.png)
-![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/homepage-2.png)
+![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-43-16.png)
+![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-45-54.png)
 
 #### Product Details Page
-![Product Details](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/product-details.png)
+![Product Details](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-43-40.png)
 
 #### Cart Page
-![Cart Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/cart.png)
+![Cart Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-44-07.png)
 
 #### Checkout Page
-![Checkout Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/checkout.png)
+![Checkout Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-44-16.png)
+![Checkout Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-44-23.png)
+
 
 #### Login Page
-![Login Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/login.png)
+![Login Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-46-00.png)
 
 #### Dark Theme Example
-![Dark Theme](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/dark-theme.png)
+![Dark Theme](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2020-46-09.png)
 
 
 
