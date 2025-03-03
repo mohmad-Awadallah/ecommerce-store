@@ -83,41 +83,25 @@ Open http://localhost:3000 to view it in your browser.
 - Username: `mor_2314`
 - Password: `83r5^_`
 
----
+### 8. Screenshots
+Below are some screenshots showcasing the application's interface:
 
-my-web-app/
-├── .idea/                    # إعدادات IDE (مثل WebStorm أو IntelliJ)
-├── cypress/                  # اختبارات Cypress
-│   ├── e2e/                  # اختبارات End-to-End
-│   ├── fixtures/             # بيانات ثابتة للاختبارات
-│   └── support/              # إعدادات ودعم لـ Cypress
-├── public/                   # ملفات الـ Static (مثل index.html، الأيقونات)
-│   ├── index.html            # ملف HTML الرئيسي
-│   └── assets/              # ملفات ثابتة (صور، خطوط، إلخ)
-├── src/                      # مصدر الكود الرئيسي
-│   ├── assets/               # ملفات الأصول (صور، أيقونات، إلخ)
-│   ├── components/           # مكونات الواجهة (React/Vue components)
-│   ├── context/              # React Context API لإدارة الحالة
-│   ├── cypress/              # اختبارات Cypress (يمكن نقلها إلى مجلد cypress الرئيسي)
-│   ├── hooks/                # React Hooks مخصصة
-│   ├── locales/              # ملفات الترجمة (i18n)
-│   ├── pages/                # صفحات التطبيق
-│   ├── routes/               # إدارة المسارات (Routing)
-│   ├── utils/                # وظائف مساعدة (utility functions)
-│   ├── App.css               # أنماط المكون الرئيسي
-│   ├── App.js                # المكون الرئيسي للتطبيق
-│   ├── App.test.js           # اختبارات المكون الرئيسي
-│   ├── index.js              # نقطة دخول التطبيق
-│   ├── reportWebVitals.js    # تقارير أداء التطبيق
-│   ├── setupProxy.js         # إعدادات Proxy للاتصال بالخادم
-│   └── setupTests.js         # إعدادات اختبارات Jest
-├── .gitignore                # ملف لتجاهل الملفات التي لا يجب تتبعها بواسطة Git
-├── cypress.config.ts         # إعدادات Cypress (TypeScript)
-├── my-ecommerce-store.code-workspace  # إعدادات Workspace لـ VS Code
-├── .prettierrc               # إعدادات Prettier لتنسيق الكود
-├── package-lock.json         # تثبيت إصدارات التبعيات (يتم إنشاؤه تلقائيًا)
-├── package.json              # ملف تعريف المشروع والتبعيات
-├── README.md                 # وصف المشروع وكيفية تشغيله
-├── tsconfig.json             # إعدادات TypeScript
+#### Home Page
+![Home Page](./screenshots/homepage.png)
+
+#### Product Details Page
+![Product Details](./screenshots/product-details.png)
+
+#### Cart Page
+![Cart Page](./screenshots/cart.png)
+
+#### Checkout Page
+![Checkout Page](./screenshots/checkout.png)
+
+#### Login Page
+![Login Page](./screenshots/login.png)
+
+#### Dark Theme Example
+![Dark Theme](./screenshots/dark-theme.png)
 
 
