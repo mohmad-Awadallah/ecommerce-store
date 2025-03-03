@@ -1,0 +1,308 @@
+{
+  "orderTracking": {
+    "title": "מעקב הזמנה",
+    "enterOrderId": "הכנס את מספר ההזמנה",
+    "trackButton": "עקוב",
+    "loading": "מחפש...",
+    "error": "אירעה שגיאה במהלך המעקב אחרי ההזמנה. אנא נסה שוב מאוחר יותר.",
+    "status": "סטטוס הזמנה",
+    "details": {
+      "title": "פרטים:",
+      "gathering": "ההזמנה נמצאת בתהליך איסוף והכנה לשליחה.",
+      "shipped": "ההזמנה נשלחה בדרכה אליך.",
+      "delivered": "ההזמנה נמסרה בהצלחה.",
+      "delayed": "ההזמנה התעכבה עקב סיבות לא צפויות."
+    },
+    "contactSupport": "צור קשר עם התמיכה",
+    "loginRequired": "עליך להתחבר כדי לעקוב אחרי הזמנות...",
+    "statusLabels": {
+      "gathering": "בתהליך איסוף",
+      "shipped": "נשלח",
+      "delivered": "נמסר",
+      "delayed": "התעכב"
+    }
+  },
+  "checkoutPage": {
+    "title": "🛍️ סיום קנייה",
+    "successMessage": "🎉 התשלום הושלם בהצלחה! תודה על קניותיך."
+  },
+  "checkout": {
+    "title": "תשלום",
+    "cardName": "שם בעל הכרטיס",
+    "cardNamePlaceholder": "הזן את שם בעל הכרטיס",
+    "cardNumber": "מספר כרטיס",
+    "expiryDate": "תאריך תפוגה",
+    "cvv": "קוד CVV",
+    "couponCode": "קוד קופון",
+    "applyCoupon": "החל קופון",
+    "totalPrice": "מחיר כולל",
+    "submitButton": "בצע תשלום",
+    "redirecting": "מנתב...",
+    "successMessage": "התשלום הצליח!",
+    "paymentMethod": "אמצעי תשלום",
+    "saveCard": "שמור כרטיס"
+  },
+  "validation": {
+    "cardNameRequired": "יש להזין את שם בעל הכרטיס.",
+    "cardNumberInvalid": "מספר הכרטיס לא תקין.",
+    "expiryInvalid": "פורמט תאריך התפוגה לא תקין.",
+    "cvvInvalid": "CVV לא תקין.",
+    "expiryExpired": "תוקף הכרטיס פג.",
+    "discountApplied": "ההנחה הוחלה בהצלחה!",
+    "invalidCoupon": "קוד קופון לא תקין."
+  },
+  "login": {
+    "title": "🔑 כניסה",
+    "usernameLabel": "שם משתמש",
+    "passwordLabel": "סיסמה",
+    "error": "פרטי הכניסה אינם נכונים",
+    "loadingButton": "מתחבר...",
+    "submitButton": "התחבר"
+  },
+  "currency": {
+    "shekel": "שקל"
+  },
+  "productDetails": {
+  "loading": "טוען פרטי מוצר...",
+  "error": "נכשל בטעינת פרטי מוצר.",
+  "notFound": "המוצר לא נמצא.",
+  "backButton": "חזור",
+  "price": "מחיר: ${{price}}",
+  "addToCartButton": "הוסף לעגלה",
+  "addedToFavorites": "המוצר נוסף למועדפים",
+  "removedFromFavorites": "המוצר הוסר מהמועדפים",
+  "addToFavorites": "הוסף למועדפים",
+  "removeFromFavorites": "הסר מהמועדפים"
+},
+  "productList": {
+    "noProductsFound": "לא נמצאו מוצרים תואמים."
+  },
+  "register": {
+    "title": "📋 טופס רישום",
+    "usernameLabel": "שם משתמש",
+    "emailLabel": "אימייל",
+    "phoneLabel": "מספר טלפון",
+    "cityLabel": "עיר",
+    "passwordLabel": "סיסמה",
+    "submitButton": "רשום",
+    "loginFunctionNotFound": "פונקציית כניסה לא נמצאה.",
+    "invalidForm": "אנא ודא שהנתונים נכונים.",
+    "successMessage": "✅ הרישום בוצע בהצלחה!",
+    "errorMessage": "אירעה שגיאה ברישום, אנא נסה שוב."
+  },
+  "errorBoundary": {
+    "message": "אירעה שגיאה בלתי צפויה, אנו מתנצלים על אי הנוחות.",
+    "reload": "רענן דף",
+    "goHome": "לרשות הבית"
+  },
+  "cart": {
+    "cart": "סל קניות",
+    "errorLoading": "נכשל בטעינת סל הקניות מהאחסון המקומי.",
+    "errorSaving": "נכשל בשמירת סל הקניות.",
+    "invalidProduct": "פרטי המוצר אינם תקינים!",
+    "addedToCart": "✅ נוספה לעגלה",
+    "removedFromCart": "✅ הוסרה מהעגלה!",
+    "clearedCart": "✅ סל הקניות התרוקן!",
+    "updatedQuantity": "✅ כמות עודכנה!",
+    "emptyCart": "הסל ריק!",
+    "purchaseSuccess": "הקנייה בוצעה בהצלחה!"
+  },
+  "home": {
+    "title": "דף הבית",
+    "errorLoading": "נכשל בטעינת המוצרים. אנא נסה שוב.",
+    "productsTitle": "מוצרים",
+    "searchPlaceholder": "חפש מוצר...",
+    "allCategories": "כל הקטגוריות",
+    "electronics": "אלקטרוניקה",
+    "jewelery": "תכשיטים",
+    "mensClothing": "ביגוד גברים",
+    "womensClothing": "ביגוד נשים",
+    "welcomeMessage": "ברוכים הבאים לאתר שלנו!"
+  },
+  "userSettings": {
+    "accountInfo": "מידע על חשבון",
+    "fullName": "שם מלא",
+    "email": "אימייל",
+    "privacySettings": "הגדרות פרטיות",
+    "currentPassword": "סיסמה נוכחית",
+    "newPassword": "סיסמה חדשה",
+    "saveChanges": "שמור שינויים",
+    "cancel": "ביטול",
+    "fillFullName": "אנא הכנס שם מלא",
+    "invalidEmail": "אימייל לא תקין",
+    "fillCurrentPassword": "אנא הכנס סיסמה נוכחית",
+    "fillNewPassword": "אנא הכנס סיסמה חדשה",
+    "changesSaved": "השינויים נשמרו בהצלחה",
+    "fixErrors": "אנא תקן את השגיאות לפני שמירת השינויים",
+    "changesCancelled": "השינויים בוטלו"
+  },
+  "accountPage": {
+    "loading": "טוען...",
+    "errorLoadingData": "אירעה שגיאה במהלך טעינת הנתונים",
+    "errorFetchingUserData": "נכשל בהבאת נתוני המשתמש",
+    "accountInfo": "מידע על חשבון",
+    "fullName": "שם מלא",
+    "email": "אימייל",
+    "phone": "טלפון",
+    "address": "כתובת",
+    "favorites": "מועדפים",
+    "orders": "הזמנות",
+    "price": "מחיר",
+    "currency": "שקל",
+    "noUser": "לא נמצאו נתוני משתמש",
+    "noFullName": "שם מלא לא זמין",
+    "noEmail": "אימייל לא זמין",
+    "noFavorites": "אין מועדפים",
+    "noOrders": "אין הזמנות",
+    "orderDate": "תאריך הזמנה",
+    "totalAmount": "סכום כולל",
+    "goToSettings": "עבור להגדרות"
+  },
+  "account": {
+    "title": "דף חשבון"
+  },
+  "storeInfo": {
+    "title": "מידע על החנות"
+  },
+  "trackOrder": {
+    "title": "מעקב הזמנה"
+  },
+  "supportPage": {
+    "title": "תמיכה",
+    "contactDescription": "אם אתה זקוק לעזרה, אנא צור קשר באמצעות הטופס למטה.",
+    "emailLabel": "אימייל",
+    "emailPlaceholder": "הכנס את האימייל שלך",
+    "messageLabel": "הודעה",
+    "messagePlaceholder": "הכנס את הודעתך כאן",
+    "submitButton": "שלח",
+    "backToHome": "חזור לדף הבית",
+    "error": "אנא מלא את השדות הדרושים.",
+    "successMessage": "ההודעה נשלחה בהצלחה!",
+    "loading": "שולח..."
+  },
+  "storeInfoPage": {
+    "storeInfo": "מידע על החנות",
+    "storeDetails": "פרטי החנות",
+    "storeNamee": "חנות מסחר אלקטרוני",
+    "locationn": "ישראל",
+    "storeHourss": "8:00 - 20:00",
+    "policyy": "לפני התשלום על הלקוח לבדוק את תנאי אמצעי התשלום הזמינים, ולפני ההזמנה על המשתמש לקרוא את תיאור המוצר בקפידה, ובתיבת ההערות של המוצר יכול הלקוח לכתוב את ההערות שלו אשר יתבצעו ככל האפשר ואינן מחייבות את החנות.",
+    "contactUss": "02-74639-082",
+    "branchess": "ירושלים, תל אביב, באר שבע, נתניה",
+    "aboutUss": "החנות המתמחה מספקת מוצרים איכותיים אשר משקפים את האופנה והאלגנטיות בשוק הערבי והחולאי בכלל, ובמחירים תחרותיים ונגישים לכולם.",
+    "currentPromotions": "חסוך עד 50% עם קופוני דיל. קבל הנחה משמעותית על המוצרים או חסוך כסף באמצעות קופונים בתהליך התשלום.",
+    "customerReviewss": "הביקורות של החנויות עוזרות למצוא את העסקים שנותנים רושם טוב אצל הקונים, משפרות את האמון במוסדות הללו ועוזרות להם לקבל החלטות קנייה מחושבות.",
+    "storeName": "שם החנות",
+    "location": "מיקום",
+    "storeHours": "שעות פתיחה",
+    "policy": "מדיניות החנות",
+    "contactUs": "צור קשר",
+    "aboutUs": "עלינו",
+    "promotions": "הנחות",
+    "branches": "סניפים",
+    "customerReviews": "ביקורות לקוחות",
+    "paymentMethods": "אמצעי תשלום",
+    "paymentMethodsList": "אנו מקבלים תשלום בכרטיסי אשראי, PayPal ועוד.",
+    "shippingPolicy": "מדיניות משלוחים",
+    "shippingDetails": "שליחה זמינה לכל האזורים. זמן הגעה תוך 3-5 ימי עסקים.",
+    "teamMembers": "חברי צוות",
+    "ourTeam": "הצוות שלנו",
+    "reviews": "ביקורות"
+  },
+  "favorites": {
+    "title": "מועדפים",
+    "empty": "לא נוספו מוצרים עדיין.",
+    "confirmRemove": "האם אתה בטוח שברצונך להסיר את {{name}}?",
+    "removed": "{{name}} הוסר מהמועדפים.",
+    "loginRequired": "בבקשה התחבר כדי לנהל את המועדפים שלך"
+  },
+  "common": {
+    "confirm": "אישור",
+    "remove": "הסר",
+    "price": "מחיר: {{value}}",
+    "category": "קטגוריה"
+  },
+  "a11y": {
+    "favoritesList": "רשימת המועדפים",
+    "productImage": "תמונה של {{name}}",
+    "removeFavorite": "הסר את {{name}} מהמועדפים",
+    "confirmRemove": "אישור הסרה"
+  },
+  "specialOffers": {
+    "title": "הצעות בלעדיות",
+    "subtitle": "נצל את ההצעות המיוחדות הטובות ביותר",
+    "expiresOn": "פג תוקף בעוד",
+    "codeCopied": "הקוד {{code}} הועתק בהצלחה!",
+    "limitedTime": "הצעה לזמן מוגבל",
+    "claimOffer": "קבל את ההצעה",
+    "learnMore": "למד עוד",
+    "noCodeRequired": "לא נדרש קוד הנחה",
+    "shareMessage": "צפה בהצעה בלעדית זו ב",
+    "termsApply": "תנאים והגבלות חלים על כל ההצעות",
+    "termsAndConditions": "* לפרטים מלאים, אנא עיין במדיניות ההנחות והתנאים הכלליים",
+    
+    "offer1": {
+      "title": "20% הנחה לכולם",
+      "description": "קבל 20% הנחה על כל המוצרים עם הקוד"
+    },
+    
+    "offer2": {
+      "title": "50% הנחה ללקוחות חדשים",
+      "description": "חסוך 50% בהזמנה הראשונה שלך אצלנו"
+    },
+    
+    "freeShipping": {
+      "title": "משלוח חינם תמיד",
+      "description": "הנאה ממשלוח חינם על כל ההזמנות מעל 300 ש\"ח"
+    }
+  },
+  "loading": "טוען הצעות...",
+  "timeUnits": {
+    "day": "יום",
+    "days": "ימים",
+    "hours": "שעות",
+    "minutes": "דקות",
+    "seconds": "שניות"
+  },
+  "discountOfferTitle": "מבצע הנחה {{discountPercentage}}%",
+  "discountOfferMessage": "קבל {{discountPercentage}}% הנחה על כל המוצרים! השתמש בקוד: {{code}}",
+  "notificationSoundMuted": "צליל ההתראות הושתק. לחץ על הסמל כדי לבטל את ההשתקה.",
+  "notificationSoundUnmuted": "צליל ההתראות בוטל מהשתקה.",
+  "soundLoadFailed": "סליחה, טעינת הצליל נכשלה. ודא שהדפדפן שלך תומך בהשמעת שמע או שקובץ השמע קיים.",
+  "retry": "נסה שוב",
+  "muteNotifications": "השתק התראות",
+  "unmuteNotifications": "בטל השתקת התראות",
+  "currentPromotions": "מבצעים נוכחיים",
+  "newOffer": "מבצע חדש",
+  "viewDetails": "צפה בפרטים",
+  "previous": "הקודם",
+  "next": "הבא",
+  "restart": "הפעל מחדש",
+  "autoNavigate": "ניווט אוטומטי",
+  "languageChanged": "השפה שונתה בהצלחה!",
+  "notFound": "404 - הדף לא נמצא",
+  "removeItemConfirmation": "האם אתה בטוח שברצונך להסיר את המוצר הזה?",
+  "itemRemoved": "הוסר!",
+  "yes": "כן",
+  "no": "לא",
+  "clearCartConfirmation": "האם אתה בטוח שברצונך לרוקן את הסל לחלוטין?",
+  "cartCleared": "הסל רוקן!",
+  "quantityError": "הכמות חייבת להיות גדולה מאפס!",
+  "quantityUpdated": "הכמות עודכנה!",
+  "loginRequired": "עליך להירשם על מנת להשלים את הרכישה!",
+  "registerNow": "הירשם עכשיו",
+  "emptyCart": "הסל ריק, הוסף מוצרים כדי להמשיך.",
+  "purchaseSuccess": "הרכישה הושלמה בהצלחה!",
+  "emptyCartMessage": "הסל ריק",
+  "browseProducts": "תוכל לעיין במוצרים",
+  "here": "כאן",
+  "toAddProducts": "כדי להוסיף מוצרים לסל.",
+  "remove": "הסרה",
+  "total": "סה\"כ",
+  "clearCart": "רוקן את הסל",
+  "logout": "התנתקות",
+  "description": "זוהי דוגמה לתמיכה בשפות מרובות.",
+  "welcome": "ברוך הבא לחנות שלנו",
+  "english": "אנגלית",
+  "arabic": "ערבית"
+}

@@ -1,0 +1,164 @@
+/* تحسين تنسيق المنتج */
+.product-details {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  position: relative;
+}
+
+
+.product-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* تصميم الصورة */
+.product-image-container {
+  max-width: 400px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* تفاصيل المنتج */
+.product-info {
+  flex: 1;
+  text-align: left;
+}
+
+.product-info h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.product-info p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 15px 0;
+}
+
+/* زر إضافة إلى السلة */
+.add-to-cart-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+}
+
+.add-to-cart-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(1px);
+}
+
+/* زر العودة إلى الصفحة السابقة */
+.back-button {
+  margin: 10px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.loading-indicator {
+  text-align: center;
+  font-size: 18px;
+  color: #3498db;
+}
+
+/* تحسين الاستجابة للأجهزة المحمولة */
+@media (max-width: 768px) {
+  .product-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .product-info h2 {
+    font-size: 20px;
+  }
+
+  .product-info p {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+}
+
+
+.favorite-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #ff4757; /* Changed from blue (#3498db) to red (#ff4757) */
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.favorite-btn:hover {
+  background-color: #ff6b81; /* Lighter red on hover */
+  transform: scale(1.05);
+}
+
+.favorite-btn:active {
+  background-color: #e84118; /* Darker red on click (optional adjustment) */
+  transform: scale(0.95);
+}
+
+/* Icon styling (if used) */
+.favorite-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+}

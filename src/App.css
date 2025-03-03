@@ -1,38 +1,760 @@
-.App {
-  text-align: center;
+/* ============================================================
+   متغيرات جذرية عامة (Global Variables)
+   ============================================================ */
+   :root {
+    /* ========== الألوان الأساسية ========== */
+    --primary-100: #e7f1ff;
+    --primary-500: #007bff;
+    --primary-900: #004080;
+    
+    /* ========== ألوان النص ========== */
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    
+    /* ========== الخلفيات ========== */
+    --bg-body: #ffffff;
+    --bg-surface: #f8f9fa;
+    --bg-gradient: linear-gradient(to right, #f8f9fa, #e9ecef);
+    
+    /* ========== الحدود والظلال ========== */
+    --border-color: #dee2e6;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    /* ========== الأحجام العامة ========== */
+    --radius-base: 0.5rem;
+    --spacing-base: 1rem;
+  }
+  
+  /* ============================================================
+     إعدادات الثيم الداكن
+     ============================================================ */
+  /* ========== الثيم الداكن ========== */
+[data-theme="dark"] {
+  --primary-100: #0a1429;
+  --primary-500: #0d6efd;
+  --primary-900: #7ab8ff;
+  
+  --text-primary: #f8f9fa;
+  --text-secondary: #dee2e6;
+  
+  --bg-body: #212529;
+  --bg-surface: #343a40;
+  --bg-gradient: linear-gradient(to right, #2d3436, #212529);
+  
+  --border-color: #495057;
+  --shadow-sm: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+  
+  /* ============================================================
+     إعدادات عامة للجسم (Body & Global Styles)
+     ============================================================ */
+     body {
+      font-family: 'Tajawal', system-ui, sans-serif;
+      background: var(--bg-body);
+      color: var(--text-primary);
+      line-height: 1.6;
+      transition: 
+        background-color 0.3s ease,
+        color 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+  /* ============================================================
+     تنسيق النصوص والاتجاهات
+     ============================================================ */
+  .rtl {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  /* ============================================================
+     تنسيق حاوية التطبيق الرئيسي
+     ============================================================ */
+  .App {
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+  
+  /* ============================================================
+     تنسيق العناوين
+     ============================================================ */
+  h1, h2 {
+    color: var(--heading-color);
+    margin-bottom: 20px;
+  }
+  
+  /* ============================================================
+     تنسيق النماذج وحقول الإدخال
+     ============================================================ */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: var(--padding-base);
+    margin: 10px 0;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-large);
+    text-align: right;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover {
+    border-color: var(--primary-color);
+  }
+  
+  input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+    outline: none;
+  }
+  
+  /* ============================================================
+     تنسيق زر الإرسال أو الأزرار العامة
+     ============================================================ */
+  button {
+    padding: var(--padding-base);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-large);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* ============================================================
+     تنسيق الإشعارات (Toast) - يمكن تعديلها حسب الحاجة
+     ============================================================ */
+  /* تأكد من استيراد أنماط react-toastify في التطبيق */
+  
+  /* ============================================================
+     تنسيق Spinner
+     ============================================================ */
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+    &.light {
+      background-color: var(--background-gradient-start);
+    }
+    
+    &.dark {
+      background-color: var(--background-gradient-end);
+    }
+    
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid transparent;
+      border-top: 4px solid var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    &.small .spinner {
+      width: 20px;
+      height: 20px;
+    }
+    
+    &.large .spinner {
+      width: 60px;
+      height: 60px;
+    }
+    
+    &.secondary .spinner {
+      border-top: 4px solid var(--hover-color);
+    }
+    
+    &.fullscreen-spinner {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      z-index: 1000;
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* ============================================================
+     تنسيق صفحة إعدادات المستخدم
+     ============================================================ */
+  .user-settings {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .user-settings:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-settings h2 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--heading-color);
+    margin-bottom: 20px;
+  }
+  
+  /* ============================================================
+     تنسيق الأقسام داخل صفحة الإعدادات
+     ============================================================ */
+  .settings-section {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .settings-section:last-child {
+    border-bottom: none;
+  }
+  
+  .settings-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  /* ============================================================
+     تنسيق نماذج المستخدم والمحتوى
+     ============================================================ */
+  .user-settings label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .user-settings input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .user-settings input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.6);
+  }
+  
+  /* ============================================================
+     تنسيق أزرار الإجراءات في صفحة الإعدادات
+     ============================================================ */
+  .settings-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  
+  .settings-actions button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .save-btn {
+    background-color: #4a90e2;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+  }
+  
+  .save-btn:active {
+    transform: translateY(2px);
+  }
+  
+  .cancel-btn {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+  }
+  
+  .cancel-btn:active {
+    transform: translateY(2px);
+  }
+  
+  /* ============================================================
+     تنسيق Pagination
+     ============================================================ */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* ============================================================
+     تنسيق صفحة الحساب (Account Page)
+     ============================================================ */
+  .account-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: var(--background-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .account-details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .account-details p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* زر إعدادات */
+  .settings-button {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .settings-button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* ============================================================
+     تنسيق المفضلات وصفحات أخرى
+     ============================================================ */
+  .favorites-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .favorites-page-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .favorites-page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .favorites-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .favorites-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--background-color);
+    box-shadow: 0 2px 4px var(--shadow-color);
+    transition: transform 0.2s;
+  }
+  
+  .favorite-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .favorite-product-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .favorite-product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+  }
+  
+  .favorite-product-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .favorite-product-details h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+  
+  .favorite-price,
+  .favorite-description,
+  .favorite-category {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .favorite-remove-button {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .favorite-remove-button:hover {
+    background: #c0392b;
+  }
+  
+  .favorite-error-state,
+  .favorite-empty-state {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #777;
+  }
+  
+  .favorite-retry-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .favorite-retry-button:hover {
+    background: #2980b9;
+  }
+  
+  
+/* خلفية ثابتة للمنتجات المميزة */
+/* تخطيط عام */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+/* الخلفية الدوارة */
+.rotating-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0.1;
+  width: 80%;
+  max-width: 1000px;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* المحتوى الرئيسي */
+.main-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+
+
+/* التنسيقات التفاعلية */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+  
+  .rotating-background {
+    width: 95%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* ============================================================
+     الوسائط المتجاوبة (Responsive Styles)
+     ============================================================ */
+  @media (max-width: 768px) {
+    .account-page {
+      padding: 15px;
+    }
+    
+    .favorite-item,
+    .order-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .favorite-item img {
+      margin-bottom: 10px;
+    }
+    
+    .settings-button {
+      width: 100%;
+      text-align: center;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  @media (max-width: 480px) {
+    .product-item {
+      width: 100%;
+      max-width: 220px;
+    }
+  
+    .highlighted-products h2 {
+      font-size: 22px;
+    }
   }
-}
+  
+
+
+  :root {
+    --primary-color: #2C3E50;
+    --secondary-color: #E74C3C;
+    --accent-color: #27AE60;
+    --text-color: #FFFFFF;
+  }
+  
+  .special-offers-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .offers-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+  }
+  
+  .header-description {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .offer-card {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .offer-icon {
+    font-size: 3rem;
+    color: var(--accent-color);
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .offer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .offer-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .countdown-timer {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .timer-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .cta-button {
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .cta-button:hover {
+    background: #219653;
+    transform: scale(1.05);
+  }
+  
+  .share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .share-buttons button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding: 0.5rem;
+  }
+  
+  .share-buttons button:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+  
+  .offers-footer {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .offers-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .offer-card {
+      padding: 1.5rem;
+    }
+    
+    .offer-title {
+      font-size: 1.3rem;
+    }
+  }
+  .terms-notice {
+    background: #fff3cd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #ffeeba;
+  }
+  
+  .terms-icon {
+    color: #ffc107;
+    font-size: 1.5rem;
+  }
+  
+  .detailed-terms {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 1rem;
+  }
+
+  

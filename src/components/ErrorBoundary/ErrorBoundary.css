@@ -1,0 +1,28 @@
+.error-boundary {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+  }
+  
+  .error-actions {
+    margin-top: 20px;
+  }
+  
+  .reload-btn, .home-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .reload-btn:hover, .home-btn:hover {
+    background-color: #0056b3;
+  }
+  

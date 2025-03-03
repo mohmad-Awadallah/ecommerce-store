@@ -1,0 +1,66 @@
+.store-info-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .store-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .store-details {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .store-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .store-details strong {
+    color: #007bff; /* لون النص الغامق */
+  }
+  
+  .team-section, .reviews-section, .payment-section, .shipping-section, .promotions-section {
+    margin-top: 30px;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .customer-reviews {
+    text-align: left;
+  }
+  
+  .review {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .payment-section img {
+    margin: 10px 0;
+  }

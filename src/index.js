@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom'; // ✅ يجب أن يكون في الأعلى
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './context/Theme/ThemeContext';
+import { UserProvider } from './context/user/UserContext';
+import { NotificationProvider } from './context/Notification/NotificationContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Router> {/* ✅ يجب أن يكون BrowserRouter في أعلى مستوى */}
+      <ThemeProvider>
+        <UserProvider>
+          <NotificationProvider> {/* ✅ يوضع هنا بعد الراوتر */}
+            <App />
+          </NotificationProvider>
+        </UserProvider>
+      </ThemeProvider>
+    </Router>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

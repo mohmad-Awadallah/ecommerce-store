@@ -1,0 +1,27 @@
+/* 🔹 تحسين تصميم زر التبديل بين اللغات */
+.language-switcher button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: var(--font-size-large);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 5px;
+}
+
+.language-switcher button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-3px);
+}
+
+.language-switcher button:active {
+  background-color: var(--active-color);
+  transform: scale(0.98);
+}
+
+.language-switcher button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}

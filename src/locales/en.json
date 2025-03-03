@@ -1,0 +1,308 @@
+{
+  "orderTracking": {
+    "title": "Order Tracking",
+    "enterOrderId": "Enter Order ID",
+    "trackButton": "Track",
+    "loading": "Searching...",
+    "error": "An error occurred while tracking the order. Please try again later.",
+    "status": "Order Status",
+    "details": {
+      "title": "Details:",
+      "gathering": "The order is being gathered and prepared for shipment.",
+      "shipped": "The order has been shipped and is on its way to you.",
+      "delivered": "The order has been successfully delivered.",
+      "delayed": "The order was delayed due to unexpected circumstances."
+    },
+    "contactSupport": "Contact Support",
+    "loginRequired": "You need to log in to track orders...",
+    "statusLabels": {
+      "gathering": "Gathering",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "delayed": "Delayed"
+    }
+  },
+  "checkoutPage": {
+    "title": "🛍️ Checkout",
+    "successMessage": "🎉 Payment successful! Thank you for shopping with us."
+  },
+  "checkout": {
+    "title": "Checkout",
+    "cardName": "Cardholder Name",
+    "cardNamePlaceholder": "Enter cardholder name",
+    "cardNumber": "Card Number",
+    "expiryDate": "Expiry Date",
+    "paymentMethod": "Payment Method",
+    "saveCard": "Save Card",
+    "cvv": "CVV",
+    "couponCode": "Coupon Code",
+    "applyCoupon": "Apply Coupon",
+    "totalPrice": "Total Price",
+    "submitButton": "Submit Payment",
+    "redirecting": "Redirecting...",
+    "successMessage": "Payment successful!"
+  },
+  "validation": {
+    "cardNameRequired": "Card name is required.",
+    "cardNumberInvalid": "Invalid card number.",
+    "expiryInvalid": "Invalid expiry date format.",
+    "cvvInvalid": "Invalid CVV.",
+    "expiryExpired": "Card has expired.",
+    "discountApplied": "Discount applied successfully!",
+    "invalidCoupon": "Invalid coupon code."
+  },
+  "login": {
+    "title": "🔑 Login",
+    "usernameLabel": "Username",
+    "passwordLabel": "Password",
+    "error": "Incorrect login credentials",
+    "loadingButton": "Logging in...",
+    "submitButton": "Login"
+  },
+  "currency": {
+    "shekel": "Shekel"
+  },
+  "productDetails": {
+  "loading": "Loading product details...",
+  "error": "Failed to fetch product details.",
+  "notFound": "Product not found.",
+  "backButton": "Back",
+  "price": "Price: ${{price}}",
+  "addToCartButton": "Add to Cart",
+  "addedToFavorites": "Product added to favorites",
+  "removedFromFavorites": "Product removed from favorites",
+  "addToFavorites": "Add to Favorites",
+  "removeFromFavorites": "Remove from Favorites"
+},
+  "productList": {
+    "noProductsFound": "No matching products found."
+  },
+  "register": {
+    "title": "📋 Register Form",
+    "usernameLabel": "Username",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone Number",
+    "cityLabel": "City",
+    "passwordLabel": "Password",
+    "submitButton": "Register",
+    "loginFunctionNotFound": "Login function not found.",
+    "invalidForm": "Please ensure the entered data is valid.",
+    "successMessage": "✅ Registration successful!",
+    "errorMessage": "An error occurred during registration, please try again."
+  },
+  "errorBoundary": {
+    "message": "An unexpected error occurred, we apologize for the inconvenience.",
+    "reload": "Reload page",
+    "goHome": "Go to Home"
+  },
+  "cart": {
+    "cart": "Shopping Cart",
+    "errorLoading": "Failed to load shopping cart from local storage.",
+    "errorSaving": "Failed to save shopping cart.",
+    "invalidProduct": "Invalid product data!",
+    "addedToCart": "✅ Added",
+    "removedFromCart": "✅ Removed from cart!",
+    "clearedCart": "✅ Cart cleared!",
+    "updatedQuantity": "✅ Quantity updated!",
+    "emptyCart": "Your cart is empty!",
+    "purchaseSuccess": "Purchase completed successfully!"
+  },
+  "home": {
+    "title": "Home Page",
+    "errorLoading": "Failed to load products. Please try again.",
+    "productsTitle": "Products",
+    "searchPlaceholder": "Search for a product...",
+    "allCategories": "All Categories",
+    "electronics": "Electronics",
+    "jewelery": "Jewelry",
+    "mensClothing": "Men's Clothing",
+    "womensClothing": "Women's Clothing",
+    "welcomeMessage": "Welcome to our website!"
+  },
+  "userSettings": {
+    "accountInfo": "Account Info",
+    "fullName": "Full Name",
+    "email": "Email",
+    "privacySettings": "Privacy Settings",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "saveChanges": "Save Changes",
+    "cancel": "Cancel",
+    "fillFullName": "Please enter your full name",
+    "invalidEmail": "Invalid email",
+    "fillCurrentPassword": "Please enter your current password",
+    "fillNewPassword": "Please enter your new password",
+    "changesSaved": "Changes saved successfully",
+    "fixErrors": "Please fix errors before saving changes",
+    "changesCancelled": "Changes canceled"
+  },
+  "accountPage": {
+    "loading": "Loading...",
+    "errorLoadingData": "An error occurred while loading data",
+    "errorFetchingUserData": "Failed to fetch user data",
+    "accountInfo": "Account Info",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "favorites": "Favorites",
+    "orders": "Orders",
+    "price": "Price",
+    "currency": "Shekel",
+    "noUser": "No user data found",
+    "noFullName": "Full name not available",
+    "noEmail": "Email not available",
+    "noFavorites": "No favorites",
+    "noOrders": "No orders",
+    "orderDate": "Order Date",
+    "totalAmount": "Total Amount",
+    "goToSettings": "Go to settings"
+  },
+  "account": {
+    "title": "Account Page"
+  },
+  "storeInfo": {
+    "title": "Store Info"
+  },
+  "trackOrder": {
+    "title": "Track Order"
+  },
+  "supportPage": {
+    "title": "Support",
+    "contactDescription": "If you need help, please contact us using the form below.",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Enter your message here",
+    "submitButton": "Submit",
+    "backToHome": "Back to Home",
+    "error": "Please fill in the required fields.",
+    "successMessage": "Your message has been sent successfully!",
+    "loading": "Sending..."
+  },
+  "storeInfoPage": {
+    "storeInfo": "Store Info",
+    "storeDetails": "Store Details",
+    "storeNamee": "E-COMMERCE STORE",
+    "locationn": "Israel",
+    "storeHourss": "8:00 - 20:00",
+    "policyy": "Before payment, the customer should review the available payment methods, and before ordering, the user should carefully read the product description. In the product notes section, the customer can write their notes, which will be implemented as much as possible and are not mandatory for the store.",
+    "contactUss": "02-74639-082",
+    "branchess": "Jerusalem, Tel Aviv, Beer Sheva, Netanya",
+    "aboutUss": "The specialist store is an online store focused on providing high-quality products that mimic fashion and style in the Arab and Gulf markets, and globally, at competitive prices accessible to everyone.",
+    "currentPromotions": "Save up to 50% with Deal Coupons. Get a big discount on products or save money using coupons during checkout.",
+    "customerReviewss": "Customer reviews help find businesses that make a good impression on shoppers, boosting their confidence in the businesses and assisting them in making informed purchase decisions.",
+    "storeName": "Store Name",
+    "location": "Location",
+    "storeHours": "Store Hours",
+    "policy": "Store Policy",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "promotions": "Current Promotions",
+    "branches": "Store Branches",
+    "customerReviews": "Customer Reviews",
+    "paymentMethods": "Payment Methods",
+    "paymentMethodsList": "We accept payment via credit cards, PayPal, and more.",
+    "shippingPolicy": "Shipping Policy",
+    "shippingDetails": "Shipping is available to all areas. Delivery within 3-5 business days.",
+    "teamMembers": "Team Members",
+    "ourTeam": "Our Team",
+    "reviews": "Reviews"
+  },
+  "favorites": {
+    "title": "Favorites",
+    "empty": "No favorites added yet.",
+    "confirmRemove": "Are you sure you want to remove {{name}}?",
+    "removed": "{{name}} has been removed from favorites.",
+    "loginRequired": "Please log in to manage your favorites"
+  },
+  "common": {
+    "confirm": "Confirm",
+    "remove": "Remove",
+    "price": "Price: {{value}}",
+    "category": "Category"
+  },
+  "a11y": {
+    "favoritesList": "Favorites List",
+    "productImage": "Image of {{name}}",
+    "removeFavorite": "Remove {{name}} from favorites",
+    "confirmRemove": "Confirm removal"
+  },
+  "specialOffers": {
+    "title": "Exclusive Offers",
+    "subtitle": "Take advantage of the best special offers",
+    "expiresOn": "Expires in",
+    "codeCopied": "Code {{code}} copied successfully!",
+    "limitedTime": "Limited Time Offer",
+    "claimOffer": "Get the Offer",
+    "learnMore": "Learn More",
+    "noCodeRequired": "No discount code required",
+    "shareMessage": "Check out this exclusive offer on",
+    "termsApply": "Terms and conditions apply to all offers",
+    "termsAndConditions": "* For full details, please review the discount policy and general terms",
+    
+    "offer1": {
+      "title": "20% Off for Everyone",
+      "description": "Get 20% off on all products with the code"
+    },
+    
+    "offer2": {
+      "title": "50% Off for First-Time Buyers",
+      "description": "Save 50% on your first order with us"
+    },
+    
+    "freeShipping": {
+      "title": "Free Shipping Always",
+      "description": "Enjoy free shipping on all orders over 300 SAR"
+    }
+  },
+  "loading": "Loading offers...",
+  "timeUnits": {
+    "day": "day",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds"
+  },
+  "discountOfferTitle": "Discount Offer {{discountPercentage}}%",
+  "discountOfferMessage": "Get {{discountPercentage}}% discount on all products! Use code: {{code}}",
+  "notificationSoundMuted": "Notification sound muted. Click the icon to unmute.",
+  "notificationSoundUnmuted": "Notification sound unmuted.",
+  "soundLoadFailed": "Sorry, sound loading failed. Make sure your browser supports audio playback or the audio file exists.",
+  "retry": "Retry",
+  "muteNotifications": "Mute notifications",
+  "unmuteNotifications": "Unmute notifications",
+  "currentPromotions": "Current Promotions",
+  "newOffer": "New Offer",
+  "viewDetails": "View Details",
+  "previous": "Previous",
+  "next": "Next",
+  "restart": "Restart",
+  "autoNavigate": "Auto Navigate",
+  "languageChanged": "Language changed successfully!",
+  "notFound": "404 - Page Not Found",
+  "removeItemConfirmation": "Are you sure you want to remove this product?",
+  "itemRemoved": "Item removed!",
+  "yes": "Yes",
+  "no": "No",
+  "clearCartConfirmation": "Do you want to clear the entire cart?",
+  "cartCleared": "Cart cleared!",
+  "quantityError": "Quantity must be greater than zero!",
+  "quantityUpdated": "Quantity updated!",
+  "loginRequired": "You need to be logged in to complete the purchase!",
+  "registerNow": "Register now",
+  "emptyCart": "Your cart is empty, add products to continue.",
+  "purchaseSuccess": "Purchase completed successfully!",
+  "emptyCartMessage": "Your shopping cart is empty",
+  "browseProducts": "You can browse products",
+  "here": "here",
+  "toAddProducts": "to add products to the cart.",
+  "remove": "Remove",
+  "total": "Total",
+  "clearCart": "Clear Cart",
+  "logout": "Log Out",
+  "description": "This is an example of multi-language support.",
+  "welcome": "Welcome to our store",
+  "english": "English",
+  "arabic": "Arabic"
+}

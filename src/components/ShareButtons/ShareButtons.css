@@ -1,0 +1,59 @@
+/* ShareButtons.css */
+.share-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* زيادة المسافة بين الأزرار */
+  margin-top: 20px;
+  flex-wrap: wrap; /* السماح للأزرار بالانتقال إلى السطر التالي في حال كانت الشاشة صغيرة */
+}
+
+.react-share__ShareButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* جعل الأزرار دائرية */
+  width: 45px; /* تحديد عرض الزر */
+  height: 45px; /* تحديد ارتفاع الزر */
+  background-color: #fff; /* خلفية بيضاء */
+  border: 2px solid #e0e0e0; /* إضافة حد خفيف حول الزر */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف للزر */
+  transition: all 0.3s ease; /* تأثير التحويل عند التحويم */
+  cursor: pointer; /* تغيير المؤشر عند التحويم */
+}
+
+.react-share__ShareButton:hover {
+  transform: scale(1.1); /* تكبير الزر عند التحويم */
+  background-color: #f5f5f5; /* تغيير لون الخلفية عند التحويم */
+  border-color: #ccc; /* تغيير لون الحد عند التحويم */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* تحسين الظل عند التحويم */
+}
+
+.react-share__ShareButton:focus {
+  outline: none; /* إزالة إطار التركيز الافتراضي */
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* إضافة إطار تركيز مخصص */
+}
+
+/* تحسين حجم الأيقونات داخل الأزرار */
+.react-share__ShareButton .react-share__Icon {
+  width: 28px; /* تحديد عرض الأيقونة */
+  height: 28px; /* تحديد ارتفاع الأيقونة */
+}
+
+/* تنسيق الأزرار لأحجام الشاشات الصغيرة */
+@media (max-width: 600px) {
+  .share-buttons-container {
+      gap: 10px; /* تقليل المسافة بين الأزرار في الشاشات الصغيرة */
+      margin-top: 15px;
+  }
+
+  .react-share__ShareButton {
+      width: 40px;
+      height: 40px;
+  }
+
+  .react-share__ShareButton .react-share__Icon {
+      width: 24px;
+      height: 24px;
+  }
+}

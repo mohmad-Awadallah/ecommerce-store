@@ -1,0 +1,212 @@
+/* ملف Offers.css - نسخة محسنة مع تعليقات عربية */
+
+/* الحاوية الرئيسية لقسم العروض */
+.offers-container {
+  max-width: 800px; /* تحديد العرض لأفضل قراءة */
+  margin: 1rem auto; /* توسيط الحاوية */
+  padding: 0 0.8rem; /* إضافة حشو أفقي */
+}
+
+/* تنسيق العنوان الرئيسي للعروض */
+.offers-container h2 {
+  font-size: 2rem; /* حجم خط كبير للعنوان */
+  margin-bottom: 1.2rem; /* مسافة أسفل العنوان */
+}
+
+/* تنسيق العنصر الفردي للعرض */
+.offer-item {
+  padding: 1rem; /* حشو داخلي للعنصر */
+  margin-bottom: 1rem; /* مسافة بين العناصر */
+  border-radius: 8px; /* زوايا مدورة */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* ظل خفيف للإظهار */
+  animation: slideIn 0.2s ease-out; /* حركة ظهور سلسة */
+}
+
+/* تنسيق عنوان العرض الداخلي */
+.offer-item header h3 {
+  font-size: 1.4rem; /* حجم خط متوسط للعنوان */
+  margin-bottom: 0.8rem; /* مسافة أسفل العنوان */
+}
+
+/* تنسيق الصور داخل العروض */
+.offer-image {
+  max-width: 300px; /* تحديد أقصى عرض للصورة */
+  padding: 0.3rem; /* حشو حول الصورة */
+  aspect-ratio: 4/3; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  animation: fadeIn 0.3s ease-in; /* حركة ظهور للصور عند التحميل */
+}
+
+/* تنسيق النصوص داخل العروض */
+.offer-item p {
+  font-size: 1rem; /* حجم الخط القياسي */
+  margin: 1rem 0; /* مسافة حول النص */
+}
+
+/* عناصر تحكم التنقل (أزرار التالي والسابق) */
+.navigation-controls {
+  gap: 1rem; /* مسافة بين الأزرار */
+  margin-top: 1.5rem; /* مسافة فوق عناصر التحكم */
+  display: flex; /* استخدام تخطيط مرن */
+  justify-content: center; /* توسيط الأفقي للأزرار */
+  align-items: center; /* توسيط عمودي */
+  flex-wrap: wrap; /* السماح بالتفاف العناصر */
+}
+
+/* تنسيق أزرار التنقل */
+.navigation-controls button {
+  padding: 0.6rem 1rem; /* حشو داخلي للأزرار */
+  font-size: 0.9rem; /* حجم خط أصغر */
+  border: none; /* إزالة الحدود */
+  border-radius: 4px; /* زوايا مدورة */
+  background-color: #007bff; /* لون الزر الأساسي */
+  color: white; /* لون النص */
+  cursor: pointer; /* مؤشر يدوي عند التواجد */
+  transition: all 0.2s ease; /* تأثيرات سلسة */
+  min-width: 80px; /* عرض أدنى للحفاظ على التنسيق */
+}
+
+.navigation-controls button:hover {
+  background-color: #0056b3; /* لون أغمق عند التواجد */
+  transform: translateY(-1px); /* تأثير رفع خفيف */
+}
+
+/* زر إعادة التشغيل */
+.navigation-controls button:last-child {
+  background-color: #6c757d; /* لون مختلف للزر */
+}
+
+.navigation-controls button:last-child:hover {
+  background-color: #5a6268;
+}
+
+/* عداد العروض */
+.offer-counter {
+  font-size: 1rem; /* حجم الخط القياسي */
+  text-align: center; /* توسيط النص */
+  margin: 0 1rem; /* مسافة جانبية */
+  min-width: 80px; /* منع تقلص العنصر */
+}
+
+/* زر عرض التفاصيل */
+.view-details-button {
+  padding: 0.6rem 1.2rem; /* حشو داخلي */
+  font-size: 0.9rem; /* حجم خط أصغر */
+  margin: 1rem auto 0; /* توسيط الزر وإضافة مسافة */
+  display: block; /* عرض ككتلة */
+  border: none; /* إزالة الحدود */
+  border-radius: 4px; /* زوايا مدورة */
+  background-color: #28a745; /* لون أخضر */
+  color: white; /* لون النص */
+  cursor: pointer; /* مؤشر يدوي */
+  transition: all 0.2s ease; /* تأثيرات سلسة */
+}
+
+.view-details-button:hover {
+  background-color: #218838; /* لون أغمق عند التواجد */
+  transform: scale(1.05); /* تكبير خفيف */
+}
+
+/* تنسيق رسائل الخطأ */
+.error-message {
+  padding: 0.8rem; /* حشو داخلي */
+  font-size: 0.9rem; /* حجم خط أصغر */
+  max-width: 400px; /* تحديد أقصى عرض */
+  margin: 1rem auto; /* توسيط العنصر */
+  background-color: #f8d7da; /* خلفية حمراء فاتحة */
+  color: #721c24; /* لون نص داكن */
+  border-radius: 4px; /* زوايا مدورة */
+  text-align: center; /* توسيط النص */
+  border: 1px solid #f5c6cb; /* إضافة حدود */
+}
+
+/* زر التنقل التلقائي */
+.auto-navigation-toggle {
+  margin-top: 1rem; /* مسافة فوق العنصر */
+  text-align: center; /* توسيط النص */
+}
+
+.auto-navigation-toggle label {
+  display: flex; /* تخطيط مرن */
+  align-items: center; /* توسيط عمودي */
+  gap: 0.5rem; /* مسافة بين العناصر */
+  cursor: pointer; /* مؤشر يدوي */
+}
+
+.auto-navigation-toggle input {
+  width: 18px; /* حجم مناسب */
+  height: 18px; /* حجم مناسب */
+}
+
+/* تصميم متجاوب للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .offers-container {
+    padding: 0 0.4rem; /* تقليل الحشو الأفقي */
+  }
+  
+  .offers-container h2 {
+    font-size: 1.8rem; /* تصغير حجم العنوان */
+  }
+  
+  .offer-item {
+    padding: 0.8rem; /* تقليل الحشو الداخلي */
+  }
+  
+  .navigation-controls button {
+    padding: 0.5rem 0.8rem; /* تصغير حجم الأزرار */
+    font-size: 0.85rem; /* تصغير حجم الخط */
+  }
+  
+  .offer-image {
+    max-width: 100%; /* ملء العرض بالكامل */
+  }
+}
+
+/* حركات الظهور */
+@keyframes fadeIn {
+  from { opacity: 0; } /* بداية غير مرئية */
+  to { opacity: 1; } /* نهاية مرئية بالكامل */
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0; /* بداية غير مرئية */
+    transform: translateY(10px); /* تحريك من الأسفل */
+  }
+  to { 
+    opacity: 1; /* نهاية مرئية */
+    transform: translateY(0); /* موقع نهائي */
+  }
+}
+/* Default light mode styles */
+.offers-container {
+  background-color: white;
+  color: black;
+}
+
+.offer-item {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.view-details-button {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Dark mode styles */
+.dark-mode .offers-container {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode .offer-item {
+  background-color: #444;
+  color: #ddd;
+}
+
+.dark-mode .view-details-button {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Add more dark mode styles as needed */

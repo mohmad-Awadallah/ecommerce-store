@@ -1,0 +1,89 @@
+/* Login.css */
+
+/* تصميم عام لصفحة تسجيل الدخول */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* تصميم النصوص */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* تأثير التركيز */
+  input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.6);
+  }
+
+  /* تأثير تكبير الحاوية عند التركيز */
+.login-container:hover {
+  transform: scale(1.03);
+}
+  
+  /* تصميم الزر */
+  .submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+  }
+  
+  /* تأثير عند المرور فوق الزر */
+  .submit:hover {
+    background-color: #357ab7;
+    transform: scale(1.05);
+  }
+  
+  .submit:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* تصميم رسالة الخطأ */
+  .error-message {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: rgba(231, 76, 60, 0.1);
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  /* تحسين التباعد */
+  .login-container input {
+    margin-bottom: 15px; /* تباعد بين الحقول */
+  }
+  

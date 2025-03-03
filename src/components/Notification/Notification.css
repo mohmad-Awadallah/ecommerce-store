@@ -1,0 +1,154 @@
+.notification-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.toast-container {
+  width: 350px; /* زيادة العرض قليلاً */
+  padding: 5px; /* إضافة تباعد داخلي */
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* زيادة التباعد بين العناصر */
+  padding: 15px; /* زيادة التباعد الداخلي */
+  border-radius: 10px; /* زيادة انحناء الزوايا */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* تحسين الظل */
+  animation: fadeIn 0.5s ease-in-out;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* إضافة تأثير انتقال */
+}
+
+.toast-content:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التحويم */
+  transform: scale(1.02); /* تكبير قليلاً عند التحويم */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toast-message {
+  flex: 1;
+}
+
+.toast-title {
+  margin: 0 0 5px; /* إضافة تباعد بين العنوان والنص */
+  font-size: 1.3em; /* زيادة حجم الخط */
+  font-weight: 600; /* تقليل سمك الخط قليلاً */
+}
+
+.toast-body {
+  margin: 0;
+  font-size: 1em; /* تحديد حجم الخط */
+  line-height: 1.5; /* تحسين تباعد الأسطر */
+}
+
+.toast-close-button {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.8em; /* زيادة حجم الخط */
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* تحسين انتقال */
+  opacity: 0.7; /* تقليل الشفافية قليلاً */
+}
+
+.toast-close-button:hover {
+  transform: rotate(90deg) scale(1.1); /* تحسين تأثير التحويم */
+  opacity: 1; /* زيادة الشفافية عند التحويم */
+}
+
+.sound-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px; /* زيادة التباعد الداخلي */
+  border: none;
+  border-radius: 50%;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* تحسين الظل */
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.sound-toggle:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* زيادة الظل عند التحويم */
+}
+
+.sound-muted-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.light-theme .toast-content {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.dark-theme .toast-content {
+  background: #333;
+  color: #f8f9fa;
+  border: 1px solid #555;
+}
+
+.toast-icon {
+  font-size: 1.8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #007bff; /* إضافة لون للأيقونة */
+}
+
+.clickable-notification {
+  position: relative; /* تأكد من أن العنصر لا يسبب مشاكل في وضعه */
+  z-index: 1000; /* إذا كانت هناك عناصر أخرى قد تغطي الإشعار */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* إضافة تأثير عند التحويم */
+
+}
+
+.clickable-notification:hover {
+  transform: scale(1.05); /* تكبير الإشعار عند المرور عليه */
+  opacity: 0.9; /* تحسين تأثير التحويم */
+}
+
+.Toastify__toast {
+  cursor: pointer; /* تأكد من أن الإشعار قابل للنقر */
+  z-index: 1000; /* تأكد من أن الإشعار يظهر فوق العناصر الأخرى */
+}
+
+/* تحسين التجاوبية */
+@media (max-width: 480px) {
+  .toast-container {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+
+  .sound-toggle {
+    bottom: 15px;
+    right: 15px;
+  }
+}

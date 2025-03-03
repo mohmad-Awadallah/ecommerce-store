@@ -1,5 +1,20 @@
-// jest-dom adds custom jest matchers for asserting on DOM nodes.
-// allows you to do things like:
-// expect(element).toHaveTextContent(/react/i)
-// learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
+// src/setupTests.js
+const originalError = console.error;
+const originalWarn = console.warn;
+
+beforeAll(() => {
+  console.error = (...args) => {
+    if (/punycode|React Router Future Flag/.test(args[0])) return;
+    originalError(...args);
+  };
+  
+  console.warn = (...args) => {
+    if (/punycode|deprecated/.test(args[0])) return;
+    originalWarn(...args);
+  };
+});
+
+afterAll(() => {
+  console.error = originalError;
+  console.warn = originalWarn;
+});
