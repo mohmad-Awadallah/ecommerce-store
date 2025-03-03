@@ -79,5 +79,25 @@ This project is a modern e-commerce web application built with React that provid
 - Username: `mor_2314`
 - Password: `83r5^_`
 
+### 8. Screenshots
+Below are some screenshots showcasing the application's interface:
+
+#### Home Page
+![Home Page](./screenshots/homepage.png)
+
+#### Product Details Page
+![Product Details](./screenshots/product-details.png)
+
+#### Cart Page
+![Cart Page](./screenshots/cart.png)
+
+#### Checkout Page
+![Checkout Page](./screenshots/checkout.png)
+
+#### Login Page
+![Login Page](./screenshots/login.png)
+
+#### Dark Theme Example
+![Dark Theme](./screenshots/dark-theme.png)
 
 
