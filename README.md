@@ -87,7 +87,7 @@ Open http://localhost:3000 to view it in your browser.
 Below are some screenshots showcasing the application's interface:
 
 #### Home Page
-![Home Page]([./screenshots/Screenshot from 2025-03-03 19-52-30.png]
+![Home Page](./screenshots/Screenshot from 2025-03-03 19-52-30.png)
 
 #### Product Details Page
 ![Product Details](./screenshots/product-details.png)
