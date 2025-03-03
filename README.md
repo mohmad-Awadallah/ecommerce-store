@@ -70,14 +70,12 @@ This project is a modern e-commerce web application built with React that provid
    ```bash
    npm start
    ```
+   Runs the app in the development mode.
+   Open http://localhost:3000 to view it in your browser.
 3. Run Cypress tests:
    ```bash
    npm run cypress:open
    ```
-
-
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser.   
 
 ### 7. Credentials
 - Username: `mor_2314`
@@ -87,21 +85,24 @@ Open http://localhost:3000 to view it in your browser.
 Below are some screenshots showcasing the application's interface:
 
 #### Home Page
-![Home Page](./screenshots/Screenshot from 2025-03-03 19-52-30.png)
+![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/Screenshot%20from%202025-03-03%2019-52-30.png)
+![Home Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/homepage-2.png)
 
 #### Product Details Page
-![Product Details](./screenshots/product-details.png)
+![Product Details](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/product-details.png)
 
 #### Cart Page
-![Cart Page](./screenshots/cart.png)
+![Cart Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/cart.png)
 
 #### Checkout Page
-![Checkout Page](./screenshots/checkout.png)
+![Checkout Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/checkout.png)
 
 #### Login Page
-![Login Page](./screenshots/login.png)
+![Login Page](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/login.png)
 
 #### Dark Theme Example
-![Dark Theme](./screenshots/dark-theme.png)
+![Dark Theme](https://github.com/mohmad-Awadallah/ecommerce-store/blob/master/screenshots/dark-theme.png)
+
+
 
 
